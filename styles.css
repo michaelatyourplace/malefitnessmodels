@@ -1,0 +1,25 @@
+
+.firstDiv {
+    box-shadow: 5px 5px 80px lightgray;
+
+}
+
+.first-images {
+    filter: drop-shadow(30px 10px 4px #bfbfc9);
+}
+
+.image-row-two {
+    box-shadow: 5px 10px;
+}
+
+#eyecandyHead {
+    text-shadow: 2px 2px #f0e6e6;
+}
+
+#eyecandyText {
+    text-shadow: 1px 1px 2px white;
+}
+
+#meetGuys {
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
