@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about our mission to provide comprehensive information, resources, and guidance for aspiring male fitness models and physique athletes pursuing careers in the modeling industry.">
+    <meta name="keywords" content="male fitness modeling, physique modeling information, fitness model resources, modeling career guidance">
+    <title>About Us | Male Physique Modeling Information & Resources</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #dc3545;
+            --secondary-color: #212529;
+            --accent-color: #ff4757;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(220, 53, 69, 0.85), rgba(33, 37, 41, 0.85)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600') center/cover;
+            color: white;
+            padding: 120px 0 80px;
+            margin-bottom: 0;
+        }
+        
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-section .lead {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .content-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--accent-color);
+            display: inline-block;
+        }
+        
+        .mission-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin: 40px 0;
+        }
+        
+        .mission-box h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .value-card {
+            background: white;
+            border-radius: 10px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .value-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .value-card h4 {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .stat-box h3 {
+            color: var(--primary-color);
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .stat-box p {
+            color: #666;
+            margin-bottom: 0;
+            font-size: 1.1rem;
+        }
+        
+        .highlight-box {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--primary-color);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        
+        .team-commitment {
+            background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .team-commitment h2 {
+            color: white;
+        }
+        
+        .icon-feature {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .icon-feature i {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .icon-feature h4 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline-item {
+            padding: 20px 0;
+            padding-left: 60px;
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 3px var(--primary-color);
+        }
+        
+        .timeline-item::after {
+            content: "";
+            position: absolute;
+            left: 24px;
+            top: 50px;
+            width: 2px;
+            height: 100%;
+            background-color: #ddd;
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 60px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 60px 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .btn-custom {
+            background-color: white;
+            color: var(--primary-color);
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-custom:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-section .lead {
+                font-size: 1.1rem;
+            }
+            
+            .mission-box {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1>About Male Physique Modeling Guide</h1>
+                    <p class="lead">Empowering aspiring fitness models with comprehensive information, proven strategies, and industry insights to transform their physiques and launch successful modeling careers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="mission-box">
+                        <h3><i class="fas fa-bullseye me-3"></i>Our Mission</h3>
+                        <p class="lead mb-0">To provide aspiring male fitness models and physique athletes with comprehensive, accurate, and actionable information that demystifies the fitness modeling industry, empowers informed decision-making, and supports individuals in their journey toward physical excellence and career success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title d-block w-100 text-center">Who We Are</h2>
+                    
+                    <div class="row mt-5">
+                        <div class="col-lg-6 mb-4">
+                            <p class="lead">We are a dedicated information resource focused on male physique modeling, fitness modeling, and the broader fitness industry. Our platform serves as a comprehensive knowledge hub for individuals seeking to understand the requirements, strategies, and realities of building a career in fitness modeling.</p>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <p class="lead">Whether you're an aspiring fitness model taking your first steps, an amateur athlete considering professional opportunities, or simply someone passionate about the fitness modeling industry, our goal is to provide you with the information you need to make informed decisions and pursue your goals strategically.</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box mt-4">
+                        <h4 class="mb-3"><i class="fas fa-info-circle me-2"></i>What We Provide</h4>
+                        <p class="mb-0">Our website delivers educational content covering training methodologies, nutrition protocols, industry standards, branding strategies, photography guidance, networking approaches, and career development insights specific to male fitness modeling. We research industry trends, compile expert advice, and present information in accessible formats that help our readers understand this competitive field.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title d-block w-100 text-center">Our Core Values</h2>
+            
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="value-card">
+                        <i class="fas fa-check-circle d-block"></i>
+                        <h4>Accurate Information</h4>
+                        <p>We prioritize factual accuracy and research-based content. Our information is carefully compiled from industry sources, expert insights, and established fitness science to ensure reliability.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="value-card">
+                        <i class="fas fa-balance-scale d-block"></i>
+                        <h4>Realistic Expectations</h4>
+                        <p>We present honest perspectives on the fitness modeling industry, including challenges, competition levels, and the dedication required. Success requires effort, and we don't promote unrealistic shortcuts.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="value-card">
+                        <i class="fas fa-graduation-cap d-block"></i>
+                        <h4>Educational Focus</h4>
+                        <p>Our primary purpose is education. We aim to inform, guide, and empower readers with knowledge that helps them make sound decisions about their fitness and career paths.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="value-card">
+                        <i class="fas fa-users d-block"></i>
+                        <h4>Inclusivity</h4>
+                        <p>While we focus on male fitness modeling, we recognize that excellence comes in many forms. Our content respects diverse backgrounds, body types, and individual journeys toward fitness goals.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="value-card">
+                        <i class="fas fa-shield-alt d-block"></i>
+                        <h4>Safety & Health</h4>
+                        <p>We emphasize safe training practices, sustainable nutrition approaches, and the importance of consulting healthcare professionals. Physical health always comes before aesthetics.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="value-card">
+                        <i class="fas fa-handshake d-block"></i>
+                        <h4>Transparency</h4>
+                        <p>We clearly disclose affiliate relationships, advertising partnerships, and the informational nature of our content. You deserve to know when content may be influenced by business relationships.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Cover Section -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title d-block w-100 text-center">What We Cover</h2>
+            
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-dumbbell"></i>
+                                <h4>Training & Conditioning</h4>
+                                <p>Comprehensive information on resistance training, cardiovascular protocols, periodization strategies, and workout planning for achieving the physique standards of fitness modeling.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-apple-alt"></i>
+                                <h4>Nutrition & Supplementation</h4>
+                                <p>Evidence-based nutrition guidance, macronutrient planning, meal timing strategies, and supplement information to support body composition goals.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-camera"></i>
+                                <h4>Photography & Portfolio</h4>
+                                <p>Insights on working with photographers, building a professional portfolio, posing techniques, and presenting yourself effectively in visual media.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Career Development</h4>
+                                <p>Industry insights on modeling agencies, brand partnerships, networking strategies, contract negotiations, and building sustainable careers in fitness modeling.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-bullhorn"></i>
+                                <h4>Personal Branding</h4>
+                                <p>Social media strategies, content creation guidance, audience building techniques, and establishing yourself as a recognized figure in the fitness space.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Industry Insights</h4>
+                                <p>Current trends, market analysis, success stories, common pitfalls, and realistic assessments of what it takes to succeed in fitness modeling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Commitment Section -->
+    <section class="team-commitment">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title d-block w-100 text-center">Our Commitment to You</h2>
+                    
+                    <div class="row mt-5">
+                        <div class="col-lg-6 mb-4">
+                            <h4 class="text-white"><i class="fas fa-sync-alt me-2"></i>Continuously Updated Content</h4>
+                            <p>The fitness industry evolves constantly. We commit to regularly updating our content to reflect current industry standards, emerging trends, and new scientific findings in training and nutrition.</p>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <h4 class="text-white"><i class="fas fa-book-open me-2"></i>Research-Based Information</h4>
+                            <p>Our content draws from established fitness science, industry publications, professional interviews, and credible sources. We prioritize evidence over anecdotal claims whenever possible.</p>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <h4 class="text-white"><i class="fas fa-user-shield me-2"></i>No False Promises</h4>
+                            <p>We will never guarantee results, promise shortcuts, or promote unrealistic transformations. Fitness modeling success requires genuine effort, consistency, and often favorable genetics.</p>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <h4 class="text-white"><i class="fas fa-comments me-2"></i>Clear Communication</h4>
+                            <p>We explain complex topics in accessible language without dumbing down important concepts. Our goal is to educate, not to confuse or overwhelm our readers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Are NOT Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title d-block w-100 text-center">Important Clarifications</h2>
+                    
+                    <div class="highlight-box mt-4">
+                        <h4 class="mb-3"><i class="fas fa-exclamation-triangle me-2"></i>What We Are NOT</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i><strong>Not a Modeling Agency:</strong> We do not book models, arrange photoshoots, or represent talent in any capacity.</li>
+                                    <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i><strong>Not Personal Trainers:</strong> We provide general information, not personalized training programs or one-on-one coaching.</li>
+                                    <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i><strong>Not Medical Professionals:</strong> Our content is educational only and never substitutes for professional medical or nutritional advice.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i><strong>Not Guaranteeing Employment:</strong> We cannot guarantee modeling work, contracts, or career success for anyone.</li>
+                                    <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i><strong>Not Selling Supplements:</strong> While we may discuss supplements, we focus on information rather than product sales.</li>
+                                    <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i><strong>Not Promoting Shortcuts:</strong> We don't endorse or promote performance-enhancing drugs, crash diets, or dangerous practices.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We Exist Section -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title d-block w-100 text-center">Why We Exist</h2>
+                    
+                    <div class="row mt-5">
+                        <div class="col-lg-8 mx-auto">
+                            <p class="lead text-center mb-4">The fitness modeling industry can be opaque, competitive, and sometimes misleading for newcomers. Too many aspiring models receive conflicting advice, fall for scams, or pursue unrealistic expectations without proper guidance.</p>
+                            
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <h4>Information Gap</h4>
+                                    <p>Many aspiring fitness models lack access to comprehensive, accurate information about industry standards, requirements, and realistic pathways to success.</p>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <h4>Misleading Promises</h4>
+                                    <p>The fitness industry is filled with exaggerated claims, miracle transformations, and deceptive marketing that sets unrealistic expectations.</p>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <h4>Lack of Transparency</h4>
+                                    <p>Many resources fail to clearly explain the dedication, time investment, and sometimes genetic advantages required for fitness modeling success.</p>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <h4>Our Solution</h4>
+                                    <p>We provide honest, research-based, comprehensive information that helps aspiring models understand the industry, set realistic goals, and make informed decisions about their fitness and career pursuits.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title d-block w-100 text-center">Who Our Content Serves</h2>
+                    
+                    <div class="row mt-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="stat-box">
+                                <i class="fas fa-user-graduate" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                                <h4>Aspiring Models</h4>
+                                <p>Individuals beginning their journey toward fitness modeling careers who need foundational knowledge and realistic guidance.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="stat-box">
+                                <i class="fas fa-running" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                                <h4>Fitness Enthusiasts</h4>
+                                <p>Dedicated gym-goers considering whether fitness modeling might be a viable path given their physique and commitment level.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="stat-box">
+                                <i class="fas fa-trophy" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                                <h4>Amateur Athletes</h4>
+                                <p>Competitive bodybuilders, physique athletes, or fitness competitors exploring modeling opportunities within the industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="highlight-box" style="border-left-color: #ffc107; background-color: #fff3cd;">
+                        <h3 class="mb-3"><i class="fas fa-info-circle me-2"></i>Important Disclaimer</h3>
+                        <p><strong>Educational Purposes Only:</strong> All content on this website is provided for informational and educational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, treatment, or personalized fitness coaching.</p>
+                        
+                        <p><strong>Consult Professionals:</strong> Always seek the advice of your physician or other qualified health provider before beginning any exercise program, diet, or supplement regimen. Never disregard professional medical advice or delay seeking it because of information you read on this website.</p>
+                        
+                        <p><strong>Individual Results Vary:</strong> Fitness modeling success depends on numerous factors including genetics, dedication, consistency, nutrition adherence, recovery, and sometimes opportunity and timing. We make no guarantees regarding results, career success, or modeling contracts.</p>
+                        
+                        <p class="mb-0"><strong>Assumption of Risk:</strong> You assume full responsibility for any decisions you make based on information provided on this website. Exercise and intensive training carry inherent risks of injury. Always prioritize safety and proper form.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="cta-box">
+                        <h3>Ready to Learn More?</h3>
+                        <p class="lead mb-4">Explore our comprehensive guides, training resources, nutrition information, and industry insights to begin your journey toward understanding the fitness modeling industry.</p>
+                        <a href="index.html" class="btn btn-custom btn-lg me-3">Explore Resources</a>
+                        <a href="contact.html" class="btn btn-custom btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title d-block w-100 text-center">Get In Touch</h2>
+                    
+                    <p class="lead mt-4">Have questions about our content? Want to suggest topics we should cover? Looking to collaborate or contribute?</p>
+                    
+                    <div class="row mt-5">
+                        <div class="col-md-4 mb-4">
+                            <i class="fas fa-envelope" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                            <h5>Email Us</h5>
+                            <p class="text-muted">info@malephysiquemodeling.com</p>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <i class="fas fa-map-marker-alt" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                            <h5>Location</h5>
+                            <p class="text-muted">Charleston, South Carolina</p>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <i class="fas fa-share-alt" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                            <h5>Follow Updates</h5>
+                            <p class="text-muted">Stay informed on new content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Male Physique Modeling Information</h5>
+                    <p>Comprehensive resources and guidance for aspiring fitness models pursuing excellence in physique development and modeling careers.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Quick Links</h5>
+                    <p>
+                        <a href="privacy-terms.html" class="text-white text-decoration-none">Privacy Policy & Terms</a><br>
+                        <a href="index.html" class="text-white text-decoration-none">Home</a><br>
+                        <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Male Physique Modeling Guide. Empowering informed decisions in fitness modeling.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
